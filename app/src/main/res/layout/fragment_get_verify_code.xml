@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="81.5dp"
+        android:background="@drawable/text_edit_background">
+
+        <ImageView
+            android:layout_width="17.5dp"
+            android:layout_height="17.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/icon_mobile"/>
+
+        <EditText
+            android:id="@+id/mobile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/please_input_mobile"
+            android:textColorHint="@color/font_primary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="31.5dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="177dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/text_edit_background">
+
+            <ImageView
+                android:layout_width="17.5dp"
+                android:layout_height="17.5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="9dp"
+                android:src="@drawable/icon_verify"/>
+
+            <EditText
+                android:id="@+id/verify_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="@string/input_verify_code"
+                android:textColorHint="@color/font_primary"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_get_verify"
+            android:layout_marginLeft="23dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/get_verify_code"
+            android:background="@drawable/btn_verify"
+            android:layout_width="100dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:textSize="12sp"
+        android:background="@drawable/text_edit_background"
+        android:layout_width="125dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75.5dp"
+        android:text="@string/next_step"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

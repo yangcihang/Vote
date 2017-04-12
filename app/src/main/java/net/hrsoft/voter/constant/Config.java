@@ -14,7 +14,7 @@ public class Config {
     /**
      * API请求地址
      */
-    public static final String API_URL = "https://api.ickkey.com";
+    public static final String API_URL = "http://192.168.1.217:8080";
     /**
      * 验证手机号正则
      */
