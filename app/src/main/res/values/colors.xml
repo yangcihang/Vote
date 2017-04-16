@@ -15,4 +15,5 @@
     <color name="stroke">#777777</color>
     <color name="register_forget">#4a90e2</color>
     <color name="gray_line">#979797</color>
+    <color name="blue_near_line">#4a90e2</color>
 </resources>

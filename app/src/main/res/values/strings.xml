@@ -11,4 +11,10 @@
     <string name="get_verify_code">获取验证码</string>
     <string name="register_tittle">手机号注册</string>
     <string name="input_verify_code">请输入验证码</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="check_password">请确认密码</string>
+    <string name="register_done">完成注册</string>
+    <string name="choose_in_photography">从相册中选取</string>
+    <string name="reset_done">修改完成</string>
+    <string name="txt_click_to_learn_more">点击查看详情</string>
 </resources>

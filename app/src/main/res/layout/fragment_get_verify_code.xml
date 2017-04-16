@@ -16,7 +16,7 @@
             android:layout_height="17.5dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="9dp"
-            android:src="@drawable/icon_mobile"/>
+            android:src="@drawable/ic_mobile"/>
 
         <EditText
             android:id="@+id/mobile_edit"
@@ -45,7 +45,7 @@
                 android:layout_height="17.5dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="9dp"
-                android:src="@drawable/icon_verify"/>
+                android:src="@drawable/ic_verify"/>
 
             <EditText
                 android:id="@+id/verify_edit"

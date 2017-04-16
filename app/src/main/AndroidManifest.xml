@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="net.hrsoft.voter">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".VoterApplication"
         android:allowBackup="true"
@@ -17,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".account.activity.RegisterActivity"/>
+        <activity android:name=".account.activity.ForgetPasswordActivity"/>
+        <activity android:name=".home.activity.HomeActivity"/>
     </application>
 
 </manifest>
