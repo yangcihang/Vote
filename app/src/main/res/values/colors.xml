@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorToolbar">#C94444</color>
+    <color name="colorList">#C94444</color>
     <color name="white">#FFFFFF</color>
     <color name="button_up">#EB2B2B</color>
     <color name="button_down">#960A0A</color>
@@ -16,4 +17,15 @@
     <color name="register_forget">#4a90e2</color>
     <color name="gray_line">#979797</color>
     <color name="blue_near_line">#4a90e2</color>
+    <color name="colorHomeBtnUnselected">#C94444</color>
+    <color name="colorHomeBtnSelected">#930202</color>
+    <color name="clickListItem">#7E0000</color>
+    <color name="homeRecyclerSmallText">#C7C7C7</color>
+    <color name="homeRecyclerMiniTextColor">#4990E2</color>
+    <color name="clickHomeRecyclerItem">#C1C0C0</color>
+    <color name="edit_create_vote_title_normal">#8a8a8a</color>
+    <color name="eidt_create_vote_discript_normal">#C7C7C7</color>
+    <color name="rbtn_create_vote">#EA2910</color>
+    <color name="txt_statistics_title">#C94444</color>
+    <color name="txt_statistics_descript">#c7c7c7</color>
 </resources>

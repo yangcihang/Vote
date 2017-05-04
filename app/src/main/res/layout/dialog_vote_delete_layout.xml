@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorToolbar"
+              android:weightSum="1">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:layout_marginRight="57.5dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="57.5dp"
+        android:textSize="18sp"
+        android:text="@string/txt_dialog_delete_vote_info"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:id="@+id/btn_dialog_delete_vote"
+        android:text="@string/btn_dialog_delete"
+        android:background="@drawable/def_home_list_txt_pressed"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+<Button
+    android:layout_width="match_parent"
+    android:textSize="18sp"
+    android:id="@+id/btn_dialog_cancel"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:layout_gravity="center"
+    android:background="@drawable/def_home_list_txt_pressed"
+    android:text="@string/btn_dialog_cancle"
+    android:gravity="center"/>
+</LinearLayout>

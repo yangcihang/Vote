@@ -1,8 +1,8 @@
 package net.hrsoft.voter.account.activity;
 
 import net.hrsoft.voter.R;
-import net.hrsoft.voter.account.Fragment.GetVerifyCodeFragment;
-import net.hrsoft.voter.account.Fragment.ReSetPasswordFragment;
+import net.hrsoft.voter.account.fragment.*;
+import net.hrsoft.voter.account.fragment.ReSetPasswordFragment;
 import net.hrsoft.voter.common.ToolbarActivity;
 
 /**

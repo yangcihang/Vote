@@ -2,10 +2,6 @@ package net.hrsoft.voter.home.model;
 
 import net.hrsoft.voter.common.BaseModel;
 
-/**
- * Created by abtion on 17/4/16.
- */
-
 public class Votes extends BaseModel {
     private long id;
     private String tittle;
@@ -22,8 +18,6 @@ public class Votes extends BaseModel {
     private long participatorNum;
     private String qaPath;
     private boolean deleted;
-
-
 
     public Votes(long id, String tittle, String description, boolean anonymous, long participatorLimit, boolean visibilityLimit, long starTime, long endTime, long creatorId, long creatorAt, long updatedAt, String password, long participatorNum, String qaPath, boolean deleted) {
         this.id = id;

@@ -9,6 +9,7 @@
         android:layout_height="50dp"
         android:id="@+id/toolbar"
         style="@style/toolbar">
+
         <TextView
             android:id="@+id/txt_activity_title"
             android:layout_width="wrap_content"

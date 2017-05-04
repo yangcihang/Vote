@@ -41,8 +41,6 @@ public class RegisterRequest extends BaseModel {
     }
 
     public RegisterRequest(String mobile, String name, String password) {
-
-
         this.mobile = mobile;
         this.name = name;
         this.password = password;

@@ -5,7 +5,6 @@
 package net.hrsoft.voter.network;
 
 import net.hrsoft.voter.VoterApplication;
-import net.hrsoft.voter.account.model.Token;
 import net.hrsoft.voter.constant.CacheKey;
 import net.hrsoft.voter.constant.Config;
 
@@ -58,13 +57,13 @@ public class RestClient {
                     .addNetworkInterceptor(new Interceptor() {
                         @Override
                         public Response intercept(Chain chain) throws IOException {
-                            Token token = (Token) VoterApplication.getCache().getSerializableObj(CacheKey.TOKEN);
+                            String token = VoterApplication.getCache().getString(CacheKey.TOKEN);
                             if (token == null) {
                                 Request noTokenRequest = chain.request();
                                 return chain.proceed(noTokenRequest);
                             }
                             Request request = chain.request().newBuilder()
-                                    .header("Token", token.getToken())
+                                    .header("Token", token)
                                     .build();
                             return chain.proceed(request);
                         }

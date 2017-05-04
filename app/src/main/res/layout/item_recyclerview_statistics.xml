@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/txt_statistics_rec_options"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:weightSum="1"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+        <ProgressBar
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:id="@+id/progress_statistics"
+            android:progress="10"
+            android:layout_weight="0.7"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:layout_marginLeft="14dp"
+            android:text="@string/txt_statistics_vote_num"
+            android:id="@+id/txt_num_statistics"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

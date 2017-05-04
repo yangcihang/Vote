@@ -15,19 +15,16 @@ import net.hrsoft.voter.common.BaseModel;
  */
 
 public class User extends BaseModel {
-    private long id;
+    private long userId;
     private String mobile;
-    private boolean freeze;
-    private String nickname;
-    private String avatar;
-    private String sign;
+    private String userName;
 
-    public long getId() {
-        return id;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getMobile() {
@@ -38,35 +35,12 @@ public class User extends BaseModel {
         this.mobile = mobile;
     }
 
-    public boolean isFreeze() {
-        return freeze;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setFreeze(boolean freeze) {
-        this.freeze = freeze;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
-
-    public String getNickname() {
-        return nickname;
-    }
-
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
-
-    public String getAvatar() {
-        return avatar;
-    }
-
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
-    }
-
-    public String getSign() {
-        return sign;
-    }
-
-    public void setSign(String sign) {
-        this.sign = sign;
-    }
+    
 }

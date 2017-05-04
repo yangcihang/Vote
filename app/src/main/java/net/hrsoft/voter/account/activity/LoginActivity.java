@@ -13,15 +13,13 @@ import net.hrsoft.voter.R;
 import net.hrsoft.voter.VoterApplication;
 import net.hrsoft.voter.account.model.LoginResponse;
 import net.hrsoft.voter.account.model.LoginReuqest;
-import net.hrsoft.voter.account.model.Token;
 import net.hrsoft.voter.account.model.User;
 import net.hrsoft.voter.common.NoToolbarActivity;
 import net.hrsoft.voter.constant.CacheKey;
-import net.hrsoft.voter.home.activity.HomeActivity;
+import net.hrsoft.voter.home.activity.HomeVoteActivity;
 import net.hrsoft.voter.network.APICode;
 import net.hrsoft.voter.network.APIResponse;
 import net.hrsoft.voter.network.RestClient;
-import net.hrsoft.voter.util.MD5;
 import net.hrsoft.voter.util.RegexUtil;
 import net.hrsoft.voter.util.ToastUtil;
 
@@ -32,6 +30,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class LoginActivity extends NoToolbarActivity {
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_login;
+    }
     @BindView(R.id.mobile_edit)
     EditText mobileEdit;
     @BindView(R.id.password_edit)
@@ -48,12 +50,6 @@ public class LoginActivity extends NoToolbarActivity {
     ImageView btnQq;
     @BindView(R.id.btn_login)
     Button btnLogin;
-
-    @Override
-    protected int getLayoutId() {
-        return R.layout.activity_login;
-    }
-
 
     @OnClick({R.id.txt_register, R.id.txt_forget_password, R.id.btn_weibo, R.id.btn_wechat, R.id.btn_qq, R.id.btn_login})
     public void onViewClicked(View view) {
@@ -74,7 +70,7 @@ public class LoginActivity extends NoToolbarActivity {
                 ToastUtil.showToast(this, "QQ登录，待完成");
                 break;
             case R.id.btn_login:
-                /*String mobile = mobileEdit.getText().toString().trim();
+                String mobile = mobileEdit.getText().toString().trim();
                 String password = passwordEdit.getText().toString().trim();
                  if (TextUtils.isEmpty(mobile)) {
                     ToastUtil.showToast(this, "请输入手机号");
@@ -85,19 +81,16 @@ public class LoginActivity extends NoToolbarActivity {
                 } else if (password.length() < 6) {
                     ToastUtil.showToast(this, "请输入6-20位的密码");
                 } else {
-                    login(mobile, MD5.getMD5(password));
-                }  */
-                Intent intent = new Intent();
-                intent.setClass(LoginActivity.this, HomeActivity.class);
-                VoterApplication.getInstance().clearAllActivity();
-                startActivity(intent);
+                    login(mobile, password);
+                }
+               // startActivity(new Intent(LoginActivity.this,HomeVoteActivity.class));
                 break;
             default:
                 throw new NullPointerException(this.toString() + "no this choice");
         }
     }
 
-    private void login(String mobile, String password) {
+    private void login(String mobile, final String password) {
         final ProgressDialog dialog = new ProgressDialog(this);
         dialog.setMessage("拼命加载中");
         dialog.setCanceledOnTouchOutside(false);
@@ -113,10 +106,10 @@ public class LoginActivity extends NoToolbarActivity {
                 if (response.code() < APICode.SERVER_RESPONSE_CODE) {
                     switch (response.body().getCode()) {
                         case APICode.SUCCESS:
-                            loginSuccess(response.body().getData().getUser(), response.body().getData().getToken());
+                            loginSuccess(response.body().getData().getUser(), response.body().getData().getToken(),password);
                             break;
                         default:
-                            ToastUtil.showToast(LoginActivity.this,response.body().getData().toString());
+                            ToastUtil.showToast(LoginActivity.this,"网络出现问题，请稍后重试");
                     }
                 } else {
                     ToastUtil.showToast(LoginActivity.this, "网络出现问题，请稍后重试");
@@ -136,11 +129,12 @@ public class LoginActivity extends NoToolbarActivity {
     /**
      * 登录成功,存储token,跳转页面,清除所有的Activity
      */
-    private void loginSuccess(User user, Token token) {
+    private void loginSuccess(User user, String token,String password) {
         VoterApplication.getCache().putSerializableObj(CacheKey.USER, user);
-        VoterApplication.getCache().putSerializableObj(CacheKey.TOKEN, token);
+        VoterApplication.getCache().putString(CacheKey.TOKEN, token);
+        VoterApplication.getCache().putString(CacheKey.PASSWORD,password);
         Intent intent = new Intent();
-        intent.setClass(LoginActivity.this, HomeActivity.class);
+        intent.setClass(LoginActivity.this, HomeVoteActivity.class);
         VoterApplication.getInstance().clearAllActivity();
         startActivity(intent);
     }

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingTop="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_home_recyclerview_item"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_list_item"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="6.5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="top"
+            android:id="@+id/img_home_rec_state"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.73"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxEms="12"
+                android:id="@+id/txt_home_rec_title"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="12312312312312312313213123123123"
+                android:textSize="@dimen/text_home_large"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txt_home_rec_description"
+                android:ellipsize="end"
+                android:maxEms="26"
+                android:maxLines="2"
+                android:singleLine="true"
+                android:text="123123123123123123123"
+                android:textColor="@color/homeRecyclerSmallText"
+                android:textSize="@dimen/text_home_small"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.27">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/img_home_rec_time_state"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_check_detail"
+                android:id="@+id/txt_check_details"
+                android:textColor="@color/homeRecyclerMiniTextColor"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

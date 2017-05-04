@@ -1,4 +1,4 @@
-package net.hrsoft.voter.account.Fragment;
+package net.hrsoft.voter.account.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -38,6 +38,4 @@ public class ReSetPasswordFragment extends BaseFragment {
     public void onViewClicked() {
         ToastUtil.showToast(getActivity(), "修改完成");
     }
-
-
 }

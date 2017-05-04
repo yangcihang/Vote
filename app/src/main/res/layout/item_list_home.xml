@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/colorList"
+              android:layout_width="match_parent"
+              android:layout_height="36dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_listview_item"
+        android:id="@+id/txt_item_home_list"
+        android:textColor="@color/white"
+        android:background="@drawable/def_home_list_txt_pressed"/>
+
+</LinearLayout>

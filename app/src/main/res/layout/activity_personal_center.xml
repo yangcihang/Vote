@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <net.hrsoft.voter.widget.CircleImageView
+        android:src="@drawable/img_head"
+        android:layout_marginTop="83dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="82.5dp"
+        android:layout_height="82.5dp"/>
+    <Button
+        android:id="@+id/btn_choose_photo"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/text_edit_background"
+        android:textSize="10sp"
+        android:text="@string/choose_in_photography"
+        android:layout_width="71dp"
+        android:layout_height="16dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="33.5dp"
+        android:background="@drawable/text_edit_background">
+
+        <ImageView
+            android:layout_width="17.5dp"
+            android:layout_height="17.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/ic_password"/>
+
+        <EditText
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:id="@+id/edit_personal_center_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/edit_personal_center_input_password"
+            android:textColorHint="@color/font_primary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="33.5dp"
+        android:background="@drawable/text_edit_background">
+
+        <ImageView
+            android:layout_width="17.5dp"
+            android:layout_height="17.5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="9dp"
+            android:src="@drawable/ic_password"/>
+
+        <EditText
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:id="@+id/edit_personal_center_conform_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="@string/edit_personal_center_check_password"
+            android:textColorHint="@color/font_primary"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_personal_center_modify_password"
+        android:layout_marginTop="44dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/text_edit_background"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="@string/btn_personal_center_modify_password"
+        android:layout_width="125dp"
+        android:layout_height="30dp"/>
+
+</LinearLayout>

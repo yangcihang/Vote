@@ -3,18 +3,16 @@ package net.hrsoft.voter.account.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-
 import net.hrsoft.voter.R;
 import net.hrsoft.voter.VoterApplication;
-import net.hrsoft.voter.account.Fragment.AccountSettingFragment;
-import net.hrsoft.voter.account.Fragment.GetVerifyCodeFragment;
+import net.hrsoft.voter.account.fragment.AccountSettingFragment;
+import net.hrsoft.voter.account.fragment.GetVerifyCodeFragment;
 import net.hrsoft.voter.account.model.RegisterRequest;
 import net.hrsoft.voter.common.ToolbarActivity;
 import net.hrsoft.voter.network.APICode;
 import net.hrsoft.voter.network.APIResponse;
 import net.hrsoft.voter.network.RestClient;
 import net.hrsoft.voter.util.ToastUtil;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -23,8 +21,7 @@ import retrofit2.Response;
  * @author abtion.
  */
 
-public class RegisterActivity extends ToolbarActivity implements GetVerifyCodeFragment
-        .GetVerifyCodeNextStepOnClickListener, AccountSettingFragment.DoneRegisterOnClickListener {
+public class RegisterActivity extends ToolbarActivity implements GetVerifyCodeFragment.GetVerifyCodeNextStepOnClickListener, AccountSettingFragment.DoneRegisterOnClickListener {
 
     private RegisterRequest request;
 

@@ -20,4 +20,16 @@ public class CacheKey {
      * Token 信息
      */
     public static final String TOKEN = "token";
+    /**
+     * 用户所有投票信息
+     */
+    public static final String USERALLVOTEDATA="userALlVoteData";
+    /**
+     *用户某一投票信息
+     */
+    public static final String USERVOTEITEMDATA = "userVoteItemData";
+    /**
+     * 用户密码
+     */
+    public static final String PASSWORD="password";
 }

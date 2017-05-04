@@ -1,4 +1,4 @@
-package net.hrsoft.voter.account.Fragment;
+package net.hrsoft.voter.account.fragment;
 
 import android.content.Context;
 import android.view.View;

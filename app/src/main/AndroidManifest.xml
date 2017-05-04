@@ -18,9 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".home.activity.CreateVoteActivity" android:windowSoftInputMode="adjustPan|stateHidden">
+        </activity>
+        <activity android:name=".home.activity.ManageVoteActivity">
+        </activity>
+        <activity android:name=".home.activity.PersonalCenterActivity">
+        </activity>
+        <activity android:name=".home.activity.HomeVoteActivity"/>
         <activity android:name=".account.activity.RegisterActivity"/>
         <activity android:name=".account.activity.ForgetPasswordActivity"/>
-        <activity android:name=".home.activity.HomeActivity"/>
+        <activity android:name=".home.activity.VoteStatisticsActivity">
+        </activity>
     </application>
 
 </manifest>

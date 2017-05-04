@@ -1,4 +1,6 @@
 <resources>
+    <item name="position_of_deleted_vote" type="id"/>
+    <item name="id_of_deleted_vote" type="id"/>
     <string name="app_name">Voter</string>
     <string name="app_name_big">VOTER</string>
     <string name="please_input_mobile">请输入手机号</string>
@@ -17,4 +19,54 @@
     <string name="choose_in_photography">从相册中选取</string>
     <string name="reset_done">修改完成</string>
     <string name="txt_click_to_learn_more">点击查看详情</string>
+    <string name="list_quit">退出/注销账户</string>
+    <string name="list_item_vote">投票管理</string>
+    <string name="list_item_user">个人中心</string>
+    <string name="text_check_detail">点此查看详情</string>
+    <string name="dialog_network_wait">拼命加载中</string>
+    <string name="btn_start_vote">发起\n投票</string>
+    <string name="btn_home_menu_edit">编辑</string>
+    <string name="btn_home_menu_delete">删除</string>
+    <string name="btn_home_menu_check">查看</string>
+    <string name="toast_net_has_question">网络出现问题,请稍后重新尝试</string>
+    <string name="toast_net_request_success">请求成功</string>
+    <string name="text_home_fragment_default">您还没有添加任何投票</string>
+    <string name="activity_creat_vote_title">创建投票</string>
+    <string name="edit_create_vote_title">请输入投票名称</string>
+    <string name="edit_create_vote_discript">请输入投票简述</string>
+    <string name="text_create_vote_add_item">添加选项</string>
+    <string name="rbtn_single_select">单选</string>
+    <string name="rbtn_multy_select">多选</string>
+    <string name="edit_create_vote_date_hint">截止日期</string>
+    <string name="edit_create_vote_num_hint">人数限制</string>
+    <string name="edit_create_vote_password_hint">密码</string>
+    <string name="edit_create_vote_anonymous">是否匿名</string>
+    <string name="edit_create_vote_input_item">请输入选项</string>
+    <string name="btn_create_vote">发起投票</string>
+    <string name="title_vote_statistics">投票统计</string>
+    <string name="txt_dialog_delete_vote_info">真的确定要删除吗？结果将不会保留啊\n(￢︿̫̿￢☆)</string>
+    <string name="btn_dialog_delete">删除</string>
+    <string name="btn_dialog_cancle">取消</string>
+    <string name="toast_delete_success">删除成功</string>
+    <string name="txt_statistics_vote_title">投票题目</string>
+    <string name="txt_statistics_vote_num">票数: </string>
+    <string name="toast_create_vote_success">发布投票成功</string>
+    <string name="btn_personal_center_modify_password">修改密码</string>
+    <string name="edit_personal_center_input_password">请输入密码</string>
+    <string name="edit_personal_center_check_password">请确认密码</string>
+    <string name="toast_personal_password_different">两次密码不一致</string>
+    <string name="toast_personal_password_modify_success">修改成功</string>
+    <string name="toast_personal_password_wrong">请输入6到20位密码</string>
+    <string name="toast_vote_statistics_votes_has_question">投票信息异常</string>
+    <string name="txt_dialog_title_create_vote_date">选择提醒的时间</string>
+    <string name="txt_dialog_title_confirm">确认</string>
+    <string name="txt_create_vote_date_hint">请选择截止日期</string>
+    <string name="toast_create_vote_has_error">投票异常</string>
+    <string name="toast_create_vote_no_title">请输入标题</string>
+    <string name="toast_create_vote_no_end_time">请选择截止时间</string>
+    <string name="toast_create_vote_no_question_options">请设置问题的选项</string>
+    <string name="toast_create_vote_no_password">请输入密码</string>
+    <string name="toast_create_vote_people_num_is_wrong">请输入正确的人数</string>
+    <string name="toast_create_vote_num_limit_is_wrong">请输入要限制的人数</string>
+    <string name="toast_create_vote_options_is_empty">问题选项不能为空</string>
 </resources>

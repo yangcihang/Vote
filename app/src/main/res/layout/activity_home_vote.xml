@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fra_home">
+    </FrameLayout>
+<LinearLayout
+    android:layout_width="238.5dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:weightSum="1"
+    android:background="@color/colorList"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="36.5dp"
+            android:layout_height="36.5dp"
+            android:layout_marginTop="12.5dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_hand_left"
+            android:id="@+id/img_list"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_listview_item"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:text="奥特曼"
+            android:layout_gravity="center"
+            android:id="@+id/txt_list_user_name"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.83"
+        android:background="@color/colorList"
+        android:dividerHeight="1dp"
+        android:divider="@color/white"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:id="@+id/listview_home">
+    </ListView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/def_home_list_txt_pressed"
+        android:gravity="center"
+        android:id="@+id/txt_exit"
+        android:text="@string/list_quit"/>
+</LinearLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

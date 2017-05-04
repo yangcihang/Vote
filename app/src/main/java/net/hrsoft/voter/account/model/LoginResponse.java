@@ -8,9 +8,9 @@ import net.hrsoft.voter.common.BaseModel;
 
 public class LoginResponse extends BaseModel {
     private User user;
-    private Token token;
+    private String  token;
 
-    public LoginResponse(User user, Token token) {
+    public LoginResponse(User user, String  token) {
         this.user = user;
         this.token = token;
     }
@@ -23,11 +23,11 @@ public class LoginResponse extends BaseModel {
         this.user = user;
     }
 
-    public Token getToken() {
+    public String  getToken() {
         return token;
     }
 
-    public void setToken(Token token) {
+    public void setToken(String token) {
         this.token = token;
     }
 }
